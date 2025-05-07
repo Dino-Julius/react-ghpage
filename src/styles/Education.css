@@ -1,0 +1,163 @@
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.education-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.education-card.primary {
+    border-left: 4px solid var(--accent);
+}
+
+.education-card.secondary {
+    border-left: 4px solid var(--accent-light);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--accent-subtle);
+}
+
+.education-header h3 {
+    color: var(--text-header);
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.education-header h4 {
+    color: var(--text-header);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.education-period {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background-color: var(--accent-subtle);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+
+.education-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.institution {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.status, .gpa {
+    color: var(--text-secondary);
+}
+
+.courses {
+    margin-top: 1rem;
+}
+
+.courses h4 {
+    color: var(--text-header);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-badge {
+    background-color: var(--accent-subtle);
+    color: var(--accent);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.course-badge:hover {
+    transform: translateY(-2px);
+}
+
+.section-subtitle {
+    color: var(--text-header);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-subtle);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.details-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details-list li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.details-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .education-period {
+        align-self: flex-start;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        padding: 1rem;
+    }
+
+    .course-grid {
+        gap: 0.4rem;
+    }
+
+    .course-badge {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}

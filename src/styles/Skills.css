@@ -1,0 +1,172 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.skills-card h3 {
+    color: var(--text-header);
+    margin: 0 0 1.25rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-subtle);
+}
+
+.skills-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Lenguajes de Programación */
+.main-languages {
+    border-top: 4px solid var(--accent);
+}
+
+.main-langs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-lang-badge {
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.main-lang-badge:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Badges generales */
+.skill-badge {
+    background-color: var(--accent-subtle);
+    color: var(--accent);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+}
+
+/* Cursos */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.course-badge {
+    display: block;
+    background-color: var(--accent-subtle);
+    color: var(--accent);
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+}
+
+.course-badge:hover {
+    transform: translateY(-2px);
+}
+
+/* Intereses */
+.interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.interest-badge {
+    background-color: var(--accent-subtle);
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+}
+
+.interest-badge:hover {
+    transform: translateY(-2px);
+}
+
+/* Habilidades Blandas */
+.soft-skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.soft-skill-badge {
+    background-color: var(--accent-subtle);
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.soft-skill-badge:hover {
+    transform: translateY(-2px);
+    background-color: var(--accent);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .skills-row {
+        grid-template-columns: 1fr;
+    }
+
+    .main-langs {
+        flex-wrap: wrap;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-card {
+        padding: 1rem;
+    }
+
+    .main-lang-badge {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .skill-badge,
+    .course-badge,
+    .interest-badge,
+    .soft-skill-badge {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
