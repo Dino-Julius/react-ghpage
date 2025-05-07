@@ -10,7 +10,7 @@ const About = () => {
                         <div className="avatar-placeholder">JV</div>
                     </div>
                     <div className="profile-info">
-                        <h1>Julio César Vivas Medina</h1>
+                        <h1>Julio Cesar Vivas Medina</h1>
                         <h3>Desarrollador de Software</h3>
                         <p className="location">Estado de México, México</p>
                         <p className="tagline">

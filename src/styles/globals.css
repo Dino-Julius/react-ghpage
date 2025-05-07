@@ -27,19 +27,25 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content {
     padding-top: 80px;
+    width: 100%;
+    max-width: 1100px;
 }
 
 .section {
-    margin: 4rem 0;
-    padding: 1rem;
+    margin: 4rem auto;
+    padding: 1.5rem;
     border-radius: 8px;
     background-color: var(--bg-secondary);
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
 }
 
 .section:hover {
@@ -188,5 +194,10 @@ a:hover {
 
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .section {
+        margin: 2rem auto;
+        padding: 1rem;
     }
 }

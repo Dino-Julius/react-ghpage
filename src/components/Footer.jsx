@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-main">
                     <div className="footer-info">
-                        <h3>Julio César Vivas Medina</h3>
+                        <h3>Julio Cesar Vivas Medina</h3>
                         <p className="footer-tagline">
                             Desarrollador de Software | Estudiante de ITC
                         </p>
@@ -70,7 +70,7 @@ const Footer = () => {
 
                     <div className="footer-copyright">
                         <p>
-                            © {currentYear} Julio César Vivas Medina. Todos los derechos reservados.
+                            © {currentYear} Julio Cesar Vivas Medina. Todos los derechos reservados.
                         </p>
                         <p className="footer-credits">
                             Desarrollado con <span className="heart">❤️</span> usando React
