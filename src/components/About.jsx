@@ -17,6 +17,25 @@ const About = () => {
                             Estudiante de Ingeniería en Tecnología Computacional con pasión por el desarrollo de software,
                             la programación competitiva y los proyectos innovadores.
                         </p>
+                        <div style={{ marginTop: '1rem' }}>
+                            <a
+                                href="/resume_juliovivas.pdf"
+                                download
+                                className="download-resume-btn"
+                                style={{
+                                    display: 'inline-block',
+                                    padding: '0.6em 1.2em',
+                                    background: 'var(--accent, #007bff)',
+                                    color: '#fff',
+                                    borderRadius: '6px',
+                                    textDecoration: 'none',
+                                    fontWeight: 600,
+                                    transition: 'background 0.2s'
+                                }}
+                            >
+                                Descargar Resumen
+                            </a>
+                        </div>
                     </div>
                 </div>
 
